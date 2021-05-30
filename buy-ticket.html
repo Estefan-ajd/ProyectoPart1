@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Event - Events Details</title>
+  <title>Event - Buy Tickets</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,13 +45,13 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#home">Inicio</a></li>
+		  <li><a class="nav-link scrollto" href="index.html#home">Inicio</a></li>
 		  <li><a class="nav-link scrollto" href="index.html#about">Quiénes somos</a></li>
           <li><a class="nav-link scrollto" href="index.html#events">Eventos</a></li>
           <li><a class="nav-link scrollto" href="index.html#categories">Categorias</a></li>
           <li><a class="nav-link scrollto" href="index.html#nexts-events">Próximamente</a></li>
           <li><a class="nav-link scrollto" href="index.html#contact">Contáctanos</a></li>
-		  <li><a class="nav-link scrollto" href="#event-details">Detalles de Evento</a></li>
+		  <li><a class="nav-link scrollto" href="#buy-ticket">Comprar Tickets</a></li>
 		  <form class="d-flex search-div">
 			<input class="form-control search-form-bar" type="text" placeholder="Search" name="search" id="search_text">
 			<button class="btn-search" type="submit" id="search_submit"><i class="bi bi-search"></i></button>
@@ -63,76 +63,28 @@
   </header><!-- End Header -->
   
   <main id="main">
-
-    <!-- ======= Event Details Sectionn ======= -->
-    <section id="event-details">
-      <div class="container event-details">
-        <div class="section-header">
-          <h2>Detalles del Evento</h2>
-        </div>
-
+  <section id="buy-ticket">
+    <div class="container event-buy-ticket">
         <div class="row">
-          <div class="col-md-6">
-            <img src="imgs/events/2.jpg" alt="Events 2" class="img-fluid">
-          </div>
-
-          <div class="col-md-6">
-            <div class="details">
-              <h2>Partido por el amor</h2>
-              <p>Lugar en dónde se realizará : San José, Parque La Sabana</p>
-              <p>Fecha y hora: 27 de Setiembre del 2021 - 8:00am</p>
-              <p>Categoría del evento: Adultos y Niños (Gratis)</p>
-			        <p>Descripción del evento: Partido Familiar entre equipos de familias</p>
-              <a href="buy-ticket.html" class="btn btn-primary disabled">Comprar</a>
-			</div>
-          </div>
-
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Tickets en carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: &#8353;  <span id="total"></span></p>
+				<!-- Disponibles -->
+                <p class="text-right">Disponibles: <span id="disponible"></span></p>
+				<button id="boton-compra" class="btn btn-primary">Confirmar compra</button>
+                <button id="boton-vaciar" class="btn btn-danger btn-danger-1">Vaciar</button>
+            </aside>
         </div>
-      </div>
-
-    </section>
-	
-	<!-- ======= Events Section ======= -->
-    <section id="events-det">
-      <div class="container">
-        <div class="section-header">
-          <h2>Eventos de interes</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="evento">
-              <img src="imgs/events/1.jpg" alt="Events 1" class="img-fluid">
-              <div class="details">
-                <h3><a href="event-details-1.html">Sol y Arena</a></h3>
-                <p>Carrera Maratonica</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="evento">
-              <img src="imgs/events/2.jpg" alt="Events 2" class="img-fluid">
-              <div class="details">
-                <h3><a href="event-details-2.html">Partido por el Amor</a></h3>
-                <p>Partido de Futbol familiar</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="evento">
-              <img src="imgs/events/3.jpg" alt="Events 3" class="img-fluid">
-              <div class="details">
-                <h3><a href="event-details-3.html">Se desmadro Tere</a></h3>
-                <p>Stand Up Comedy de Mauricio Jiménez</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Events Section -->
-
-  </main><!-- End #main -->
+    </div>
+  </section>
+ </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -207,6 +159,9 @@
   
   <!-- Search JS-->
   <script src="js/search.js"></script>
+  
+  <!-- Buy JS-->
+  <script src="js/buy-reserv.js"></script>
 
 </body>
 
