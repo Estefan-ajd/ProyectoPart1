@@ -53,7 +53,7 @@
           <li><a class="nav-link scrollto" href="index.html#contact">Contáctanos</a></li>
 		  <li><a class="nav-link scrollto" href="#event-details">Detalles de Evento</a></li>
 		  <form class="d-flex search-div">
-			<input class="form-control search-form-bar" type="text" placeholder="Search" name="search" id="search_text">
+			<input class="form-control search-form-bar" type="text" placeholder="Buscar" name="search" id="search_text">
 			<button class="btn-search" type="submit" id="search_submit"><i class="bi bi-search"></i></button>
 		  </form>
         </ul>
@@ -73,17 +73,17 @@
 
         <div class="row">
           <div class="col-md-6">
-            <img src="imgs/events/5.jpg" alt="Events 5" class="img-fluid">
+            <img id="imagenEvento" src="imgs/events/5.jpg" alt="Events 5" class="img-fluid">
           </div>
 
           <div class="col-md-6">
-            <div class="details">
-              <h2>La Chucheca de Oro</h2>
-              <p>Lugar en dónde se realizará : Puntarenas, Casa de la Cultura</p>
-              <p>Fecha y hora: 17 de diciembre del 2021 - 4:00pm</p>
-              <p>Categoría del evento: Adultos y Niños (Pago)</p>
-			        <p>Descripción del evento: Obra de Teatro que  dará el grupo Solarium que muestra gran parte de las tradiciones porteñas</p>
-			  <a href="buy-ticket.html" class="btn btn-primary">Comprar</a>
+            <div class="details det-marg">
+              <h2 id="nombreEvento">La Chucheca de Oro</h2>
+              <p id="lugarEvento">Lugar en dónde se realizará : Puntarenas, Casa de la Cultura</p>
+              <p id="fechayhoraEvento">Fecha y hora : 17 de diciembre del 2021 - 4:00pm</p>
+              <p>Categoría del evento : Adultos y Niños (Pago)</p>
+			        <p>Descripción del evento : Obra de Teatro que  dará el grupo Solarium que muestra gran parte de las tradiciones porteñas</p>
+			  <a href="ticket-part-1.html" class="btn btn-primary">Comprar</a>
             </div>
           </div>
 
@@ -94,7 +94,7 @@
 	
 <!-- ======= Events Section ======= -->
 <section id="events-det">
-  <div class="container">
+  <div class="container events-det">
     <div class="section-header">
       <h2>Eventos de interes</h2>
     </div>
@@ -103,7 +103,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="evento">
           <img src="imgs/events/4.jpg" alt="Events 4" class="img-fluid">
-          <div class="details">
+          <div class="details det-interes">
             <h3><a href="event-details-4.html">Música para Disfrutar</a></h3>
             <p>Orquesta Filarmónica Infantil</p>
           </div>
@@ -112,7 +112,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="evento">
           <img src="imgs/events/5.jpg" alt="Events 5" class="img-fluid">
-          <div class="details">
+          <div class="details det-interes">
             <h3><a href="event-details-5.html">La Chucheca de Oro</a></h3>
             <p>Obra de Teatro</p>
           </div>
@@ -121,7 +121,7 @@
       <div class="col-lg-4 col-md-6">
         <div class="evento">
           <img src="imgs/events/6.jpg" alt="Events 6" class="img-fluid">
-          <div class="details">
+          <div class="details det-interes">
             <h3><a href="event-details-6.html">Tomorrowland CR</a></h3>
             <p>Concierto de Música Electronica</p>
           </div>
@@ -207,6 +207,7 @@
   
   <!-- Search JS-->
   <script src="js/search.js"></script>
+  <script src="js/event-info.js"></script>
 
 </body>
 
